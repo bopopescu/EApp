@@ -1,0 +1,67 @@
+/* Main */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial sans-serif;
+	color: white;
+    box-sizing: border-box;
+}
+/* End Main */
+
+/* Body */
+body {
+	background: no-repeat fixed;
+    padding: 10px;
+    background: rgba(241, 241, 241, 0.52);
+}
+/* End Body */
+
+.main {
+	text-align: center;
+	margin: 1px;
+}
+
+.date {
+    text-align: center;
+}
+
+/* CLOCK */
+div.clock {
+	margin: 2px 0;
+}
+
+div.clock div{
+	display: inline-block;
+	position: relative;
+}
+
+div.clock div p{
+	font-size: 25px;
+	position: relative;
+	z-index: 100;
+}
+
+div.clock .placeholder {
+	color: transparent;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+}/*END CLOCK*/
+
+
+/* AM OR PM*/
+.am-pm {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	width: 20px;
+}
+
+div.am-pm div p {
+	font-size: 8px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.am, .pm {
+	color: transparent;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="utf-8">
+        <meta name="description" content="{{ description }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='css/icons/icon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+        {% block css %}{% endblock %}
+    </head>
+
+<body style="background-image: url({{ url_for('static', filename='img/wehelp.jpg') }})">
+    <div class="header-top">
+        <h1 class="title-top">{{ title }}</h1>
+        <div class="date">
+            <h3 class="today-date">{{ today }}</h3>
+        </div>
+        <!-- Clock -->
+        <div class="main">
+		    <div class="clock">
+                <!-- HOUR -->
+                <div class="numbers">
+                    <p class="hours"></p>
+                    <p class="placeholder">88</p>
+                </div>
+
+                <div class="colon">
+                    <p>:</p>
+                </div>
+
+                <!-- MINUTE -->
+                <div class="numbers">
+                    <p class="minutes"></p>
+                    <p class="placeholder">88</p>
+                </div>
+
+                <div class="colon">
+                    <p>:</p>
+                </div>
+
+                <!-- SECOND -->
+                <div class="numbers">
+                    <p class="seconds"></p>
+                    <p class="placeholder">88</p>
+                </div>
+
+                <!-- AM / PM -->
+                <div class="am-pm">
+                    <!-- AM -->
+                    <div>
+                        <p class="am">am</p>
+                    </div>
+                    <!-- PM -->
+                    <div>
+                        <p class="pm">pm</p>
+                    </div>
+			</div>
+
+		</div>
+        <!-- END CLOCK -->
+        </div>
+    </div>
+    {% include 'navigation.jinja2' %}
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: no-repeat fixed;
+    padding: 10px;
+    background: rgba(241, 241, 241, 0.52);
+}
